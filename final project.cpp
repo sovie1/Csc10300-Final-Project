@@ -217,6 +217,10 @@ location17Pointer->updateEast(location7Pointer);
             }
         }
 
+        if (currLocation == location4Pointer) {
+            entrancepointer->updateText("You continue to walk until you see two paths ahead of you. You seem to recall having started here, but you decide not to turn back. A stone path to the east, and a worn dirt trail to the west.");
+        }
+
         if (currLocation->checkIfEnding()){
             (currLocation->GetThisLocation()).printLocationText();
             endingArt(currLocation);
